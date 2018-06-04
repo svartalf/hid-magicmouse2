@@ -1,0 +1,149 @@
+05 01 09 02 a1 01 85 12 05 09 19 01 29 02 15 00 25 01 95 02 75 01 81 02 95 01 75 06 81 03 05 01 09 01 a1 00 16 01 f8 26 ff 07 36 01 fb 46 ff 04 65 13 55 0d 09 30 09 31 75 10 95 02 81 06 75 08 95 02 81 01 c0 06 02 ff 09 55 85 55 15 00 26 ff 00 75 08 95 40 b1 a2 c0 06 00 ff 09 14 a1 01 85 90 05 84 75 01 95 03 15 00 25 01 09 61 05 85 09 44 09 46 81 02 95 05 81 01 75 08 95 01 15 00 26 ff 00 09 65 81 02 c0 00 
+
+  INPUT(18)[INPUT]
+    Field(0)
+      Application(GenericDesktop.Mouse)
+      Usage(2)
+        Button.0001
+        Button.0002
+      Logical Minimum(0)
+      Logical Maximum(1)
+      Report Size(1)
+      Report Count(2)
+      Report Offset(0)
+      Flags( Variable Absolute )
+    Field(1)
+      Physical(GenericDesktop.Pointer)
+      Application(GenericDesktop.Mouse)
+      Usage(2)
+        GenericDesktop.X
+        GenericDesktop.Y
+      Logical Minimum(-2047)
+      Logical Maximum(2047)
+      Physical Minimum(-1279)
+      Physical Maximum(1279)
+      Unit Exponent(-3)
+      Unit(English Linear : Inch)
+      Report Size(16)
+      Report Count(2)
+      Report Offset(8)
+      Flags( Variable Relative )
+  INPUT(144)[INPUT]
+    Field(0)
+      Application(ff00.0014)
+      Usage(3)
+        Power Device.Good
+        Battery System.Charging
+        Battery System.0046
+      Logical Minimum(0)
+      Logical Maximum(1)
+      Physical Minimum(-1279)
+      Physical Maximum(1279)
+      Unit Exponent(-3)
+      Unit(English Linear : Inch)
+      Report Size(1)
+      Report Count(3)
+      Report Offset(0)
+      Flags( Variable Absolute )
+    Field(1)
+      Application(ff00.0014)
+      Usage(1)
+        Battery System.0065
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Physical Minimum(-1279)
+      Physical Maximum(1279)
+      Unit Exponent(-3)
+      Unit(English Linear : Inch)
+      Report Size(8)
+      Report Count(1)
+      Report Offset(8)
+      Flags( Variable Absolute )
+  INPUT(161)[INPUT]
+  FEATURE(85)[FEATURE]
+    Field(0)
+      Application(GenericDesktop.Mouse)
+      Usage(64)
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+        ff02.0055
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Physical Minimum(-1279)
+      Physical Maximum(1279)
+      Unit Exponent(-3)
+      Unit(English Linear : Inch)
+      Report Size(8)
+      Report Count(64)
+      Report Offset(0)
+      Flags( Variable Absolute NoPreferredState Volatile )
+
+Button.0001 ---> Key.LeftBtn
+Button.0002 ---> Key.RightBtn
+GenericDesktop.X ---> Relative.X
+GenericDesktop.Y ---> Relative.Y
+Power Device.Good ---> Key.Btn0
+Battery System.Charging ---> Key.Btn1
+Battery System.0046 ---> Key.Btn2
+Battery System.0065 ---> Absolute.Misc

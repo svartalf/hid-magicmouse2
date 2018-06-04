@@ -1,0 +1,32 @@
+# Maintainer: svartalf <self@svartalf.info>
+
+pkgname=hid-magicmouse2-git
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Apple Magic Mouse 2 HID driver"
+arch=('x86_64')
+url="https://github.com/svartalf/hid-magicmouse2"
+license=('GPL')
+makedepends=('linux-headers' 'git')
+provides=("${pkgname}")
+# TODO: Source URL should be changed before publish
+source=("${pkgname}::/home/svartalf/projects/hid-magicmouse2"
+		"hid-magicmouse2.modprobe.conf"
+		"hid-magicmouse2.modules-load.conf")
+noextract=()
+md5sums=('SKIP' 'SKIP' 'SKIP')
+
+pkgver() {
+	cd "${srcdir}/${pkgname}"
+	printf "%s" "$(git describe --long | sed 's/\([^-]*-\)g/r\1/;s/-/./g')"
+}
+
+build() {
+	cd "${pkgname}-${pkgver}"
+	make
+}
+
+package() {
+	ls
+  cd "${srcdir}/${pkgname}"
+}
